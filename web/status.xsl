@@ -3,12 +3,13 @@
 <xsl:template match = "/icestats">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>Icecast Streaming Media Server</title>
+	<title>Stream Server - Radio Bern RaBe 95,6 MHz</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>
-	<h1 id="header">Icecast2 Status</h1>
+	<!--<h1 id="header">Icecast2 Status - Radio Bern RaBe 95,6 MHz</h1>-->
+	<h1 id="header">RaBe</h1>
 	<!--index header menu -->
 	<div id="menu">
 		<ul>
@@ -59,12 +60,14 @@
 					</xsl:if>
 					<table class="yellowkeys">
 						<tbody>
+<!--
 							<xsl:if test="server_name">
 								<tr>
 									<td>Stream Name:</td>
 									<td><xsl:value-of select="server_name" /></td>
 								</tr>
 							</xsl:if>
+-->
 							<xsl:if test="server_description">
 								<tr>
 									<td>Stream Description:</td>
@@ -72,10 +75,12 @@
 								</tr>
 							</xsl:if>
 							<xsl:if test="server_type">
+<!--
 								<tr>
 									<td>Content Type:</td>
 									<td><xsl:value-of select="server_type" /></td>
 								</tr>
+-->
 							</xsl:if>
 							<xsl:if test="stream_start">
 								<tr>
@@ -83,12 +88,14 @@
 									<td class="streamstats"><xsl:value-of select="stream_start" /></td>
 								</tr>
 							</xsl:if>
+<!--
 							<xsl:if test="bitrate">
 								<tr>
 									<td>Bitrate:</td>
 									<td class="streamstats"><xsl:value-of select="bitrate" /></td>
 								</tr>
 							</xsl:if>
+-->
 							<xsl:if test="quality">
 								<tr>
 									<td>Quality:</td>
@@ -115,22 +122,27 @@
 							</xsl:if>
 							<xsl:if test="listeners">
 								<tr>
-									<td>Listeners (current):</td>
-									<td class="streamstats"><xsl:value-of select="listeners" /></td>
+									<!-- <td>Listeners (current):</td> 
+									<td class="streamstats"><xsl:value-of select="listeners" /></td>-->
 								</tr>
 							</xsl:if>
+<!--
 							<xsl:if test="listener_peak">
 								<tr>
 									<td>Listeners (peak):</td>
 									<td class="streamstats"><xsl:value-of select="listener_peak" /></td>
 								</tr>
 							</xsl:if>
+-->
+<!--
 							<xsl:if test="genre">
 								<tr>
 									<td>Genre:</td>
 									<td class="streamstats"><xsl:value-of select="genre" /></td>
 								</tr>
 							</xsl:if>
+-->
+<!--
 							<xsl:if test="server_url">
 								<tr>
 									<td>Stream URL:</td>
@@ -139,6 +151,7 @@
 									</td>
 								</tr>
 							</xsl:if>
+-->
 							<tr>
 								<td>Currently playing:</td>
 								<td class="streamstats">
@@ -159,7 +172,8 @@
 		</xsl:choose>
 	</xsl:for-each>
 	<div id="footer">
-		Support icecast development at <a href="http://www.icecast.org">www.icecast.org</a>
+		<a href="http://rabe.ch" title="Radio Bern RaBe 95,6 MHz">Radio Bern RaBe 95,6 MHz</a>
+		| Powered by <a href="http://www.icecast.org">Icecast</a>
 	</div>
 </body>
 </html>

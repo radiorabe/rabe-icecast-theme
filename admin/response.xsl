@@ -26,9 +26,10 @@
 			<p>Return Code: <xsl:value-of select="return" /></p>
 		</div>
 	</xsl:for-each>
-	<div id="footer">
-		Support icecast development at <a href="http://www.icecast.org">www.icecast.org</a>
-	</div>
+        <div id="footer">
+                <a href="http://rabe.ch" title="Radio Bern RaBe 95,6 MHz">Radio Bern RaBe 95,6 MHz</a>
+                | Powered by <a href="http://www.icecast.org">Icecast</a>
+        </div>
 </body>
 </html>
 </xsl:template>

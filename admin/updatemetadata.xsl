@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 </head>
 <body>
-	<h1>Icecast2 Admin</h1>
+	<h1 id="header">Icecast2 Admin</h1>
 	<!--index header menu -->
 	<div id="menu">
 		<ul>
@@ -40,9 +40,10 @@
 			</form>
 		</div>
 	</xsl:for-each>
-	<div id="footer">
-		Support icecast development at <a href="http://www.icecast.org">www.icecast.org</a>
-	</div>
+        <div id="footer">
+                <a href="http://rabe.ch" title="Radio Bern RaBe 95,6 MHz">Radio Bern RaBe 95,6 MHz</a>
+                | Powered by <a href="http://www.icecast.org">Icecast</a>
+        </div>
 </body>
 </html>
 </xsl:template>
