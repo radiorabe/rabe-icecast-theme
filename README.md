@@ -11,8 +11,8 @@ Backup original configuration:
 
 Install templates from the git repository:
 
-	git clone https://github.com/radiorabe/stream_web.git
-	mv ~/stream_web /usr/share/icecast
+	git clone https://github.com/radiorabe/rabe-icecast-theme.git
+	mv ~/rabe-icecast-theme /usr/share/icecast
 
 Restore authentication configs from original files:
 
@@ -33,6 +33,6 @@ Login to stream.rabe.ch as root:
 
 ## License
 
-stream_web is released under the terms of the GNU Affero General Public License.
+rabe-icecast-theme is released under the terms of the GNU Affero General Public License.
 Copyright 2015-2017 Radio RaBe.
 See `LICENSE` for further information.
